@@ -9,9 +9,9 @@ int main(void) {
     frameNum = 0;
 
     //step1: Judge if bootloader needed??
-    if(!reson){  //程序不需要升级
+    if(!reson){  //绋嬪簭涓嶉渶瑕佸崌绾�
         JumpToApp();
-//        asm(" LB #0x3EBEDA"); //这是.out文件生成的pc指针入口地址，这个入口地址使得程序在运行一次main()之前的函数！！！！
+//        asm(" LB #0x3EBEDA"); //杩欐槸.out鏂囦欢鐢熸垚鐨刾c鎸囬拡鍏ュ彛鍦板潃锛岃繖涓叆鍙ｅ湴鍧�浣垮緱绋嬪簭鍦ㄨ繍琛屼竴娆ain()涔嬪墠鐨勫嚱鏁帮紒锛侊紒锛�
     }
 
     //step2: if do need
@@ -51,41 +51,3 @@ int main(void) {
         BootApp_SM();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
